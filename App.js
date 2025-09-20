@@ -47,48 +47,10 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
+conststyles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 10,
   },
 });
-<<<<<<< HEAD
-import React from "react";
-import ChatScreen from "./ChatScreen";
-import Comment from "./Comment";
-import { SafeAreaView } from 'react-native';
 
-export default function App() {
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <Comment />
-      <ChatScreen />
-    </SafeAreaView>
-    );
-}
-=======
-import React from 'react';
-import { View, StyleSheet, ScrollView } from 'react-native';
-
-import ColorChangerApp from './ColorChangerApp';
-
-const App = () => {
-  return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <ColorChangerApp />
-    </ScrollView>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    paddingVertical: 20,
-  },
-});
-
-export default App;
->>>>>>> 08071db (ColorChangerApp)
