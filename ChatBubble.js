@@ -10,10 +10,10 @@ export default function ChatBubble({ text, isMe }) {
         padding: 10,
         borderRadius: 15,
         marginVertical: 5,
-       maxWidth: "70%",
+        maxWidth: "70%",
       }}
     >
       <Text style={{ color: isMe ? "white" : "black" }}>{text}</Text>
     </View>
   );
-}// 
+}
