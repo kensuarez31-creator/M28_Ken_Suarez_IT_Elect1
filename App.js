@@ -1,14 +1,18 @@
-import ColorChangerApp from './ColorChangerApp';
-import React from 'react';
-import { SafeAreaView } from 'react-native';
-import CounterApp from './CounterApp';  
+import React from "react";
+import {Platform, KeyboardAvoidingView} from "react-native"
+import ChatScreen from "./ChatScreen";
+import CommentSection from "./CommentSection";
 
 export default function App() {
-  return (
-    <SafeAreaView style={{ flex: 1 }}>
-     <CounterApp />
-      <ColorChangerApp />
- 
-    </SafeAreaView>
-  );
+  
+  return(
+    <KeyboardAvoidingView
+    style ={{flex: 1}}
+    behavior ={Platform.os === "ios" ? "padding":"height"}
+    >
+  
+   <CommentSection />;
+   <ChatScreen />;
+   </KeyboardAvoidingView>
+   );
 }
